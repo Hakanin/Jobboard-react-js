@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* ------NAVBAR------- */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logomarianne, .logo{
+height: fit-content;
+width: 80px;
+}
+
+.brand-logo .logo {
+    width: 150px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    position: absolute;
+    top: 100%; /* Positionne en dessous du hamburger */
+    left: 0;   /* Aligne à gauche */
+    width: 100%; /* Prend toute la largeur du conteneur */
+    background-color: #ffffff; /* Couleur de fond */
+    flex-direction: column;
+    align-items: center;
+    display: none; /* Masquer par défaut */
+}
+
+
+.nav-links.active {
+    display: flex; /* Affiche en mode flex lorsque actif */
+}
+
+.nav-links ul {
+    display: none;
+}
+
+.nav-links.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* espace entre les éléments */
+    list-style-type: none; /* Enlève les puces des rubriques hamburger*/
+}
+
+
+.nav-links li a {
+    color: #555456;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #000000;
+}
+
+.right-section {
+    display: flex;
+    align-items: right;
+    gap: 1rem;
+}
+
+/* Button Connexion */
+.btn-connexion {
+    background-color: #ffffff;
+    color: #555456;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-family: roboto,Helvetica,Arial,sans-serif;
+    font-size: 0.75rem;
+    cursor: pointer
+    }
+
+.btn-connexion:hover {
+    border-color: #555456;
+}
+
+/* Search Icon */
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.loupe {
+    width: 20px;
+    height: auto;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #b3b6bb;
+}
+
+/* Responsive styles */
+
+.nav-links ul {
+    display: none;
+
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ------FIN DU NAVBAR------- */
+
+h1 {
+    font-size: 50px;
+    margin-top: 10%;
+} 
+
+h2 {
+    margin-top: 10px;
+}
+
+.zone1{
+    background-image: url("images/arriereplan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 548px;
+    display: flex;
+    justify-content: center;
+}
+
+.zone2 {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.aligne {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.zone3 {
+    background-color: #e5e9ec;
+    height: fit-content;
+}
+.grille {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e5e9ec;
+    justify-content: space-evenly;
+    gap: 20px; /* Espace entre les cartes */
+    width: 100%;
+}
+.caseemploi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: calc(25% - 40px); /* Prend 25% de la largeur avec espace */
+    background-color: #e5e9ec;
+    
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* ------Bouton Learn More------- */
+.adContainer {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.adDetails {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.button {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #e5e9ec;
+    color: #333;
+    border-color: #737679;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #737679;
+}
+/* ------Fin du Bouton Learn More------- */
+
+.zone4 {
+    background-color: #2b2e30;
+    height: 359.933px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.zone4:hover {
+    background-color: #3c4045;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.zone5{
+    background-color: #3e4249;
+    height: 188.4px;
+    transition: background-color 0.3s ease; 
+}
+.zone5:hover {
+    background-color: #51565e; /* Couleur plus claire au survol */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Effet de profondeur au survol */
+}
+
+
+.custom-hr {
+    width: 60px;                 /* Largeur de la ligne */
+    border: none;                /* Supprime la bordure par défaut */
+    border-top: 1px solid #55595f; /* Crée la ligne supérieure */
+    margin: 18px auto;           /* Espace autour de la ligne et centrage */
+}
+
+/*--------  Dashboard --------*/
+
+
+
+
+.backgroundDashboard {
+
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+
+/*--------  Circles --------*/
+
+
+
+
+.circles-container {
+
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    z-index: -1;
+
+}
+
+
+
+
+.circle {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de base, à changer pour chaque cercle */
+
+    opacity: 0.5; /* Légère transparence */
+
+    animation: float 6s ease-in-out infinite;
+
+}
+
+
+
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}

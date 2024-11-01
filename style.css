@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logomarianne, .logo{
+height: fit-content;
+width: 80px;
+}
+
+.brand-logo .logo {
+    width: 150px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #f8f8f8;
+}
+
+.right-section {
+    display: flex;
+    align-items: right;
+    gap: 1rem;
+}
+
+/* Button Connexion */
+.btn-connexion {
+    color: #555456;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-family: roboto,Helvetica,Arial,sans-serif;
+    font-size: 0.75rem;
+    }
+
+.btn-connexion:hover {
+    background-color: 555456;
+}
+
+/* Search Icon */
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.loupe {
+    width: 20px;
+    height: auto;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #b3b6bb;
+}
+
+/* Responsive styles */
+
+.nav-links ul {
+    display: none;
+    flex-direction: column;
+    background-color: #003580;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.nav-links ul.active {
+    display: flex;
+}
+
+.hamburger {
+    display: flex;
+}
+
+.zone1{
+    background-image: url("images/arriereplan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.zone2{
+    background-color: #ffffff;
+}
+
+.zone3{
+    background-color: #e5e9ec;
+}
+
+.zone4{
+    background-color: #2b2e30;
+}
+
+.zone5{
+    background-color: #3e4249;
+}
